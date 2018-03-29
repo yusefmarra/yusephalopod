@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.0
 os: linux 
 # During the Install deployment lifecycle event (which occurs between the 
 #   BeforeInstall and AfterInstall events), copy the specified files 
