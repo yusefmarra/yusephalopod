@@ -19,7 +19,7 @@ class App extends React.Component {
    return (
       <div>
         { this.state ? `${this.state.firstName} ${this.state.lastName}` : null }
-        <button onClick={this.getNewName}>GIT IT</button>
+        <button onClick={this.getNewName}>GET IT</button>
       </div>
    );
   }
