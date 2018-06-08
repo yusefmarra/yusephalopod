@@ -8,6 +8,7 @@ phases:
   build:
     commands:
       - 'npm run build'
+      - 'cd ..'
 artifacts:
   files:
     - 'server/**/*'
