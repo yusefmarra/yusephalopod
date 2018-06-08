@@ -11,9 +11,9 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: './server'
-    destination: '/home/ec2-user/yusephalopod/server'
+    destination: '/home/ec2-user/yusephalopod/'
   - source: './client/build'
-    destination: '/home/ec2-user/yusephalopod/client/build'
+    destination: '/home/ec2-user/yusephalopod/client/build/'
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
