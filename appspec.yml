@@ -10,8 +10,10 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: './'
-    destination: '/home/ec2-user/yusephalopod/'
+  - source: './server'
+    destination: '/home/ec2-user/yusephalopod/server'
+  - source: './client/build'
+    destination: '/home/ec2-user/yusephalopod/client/build'
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
