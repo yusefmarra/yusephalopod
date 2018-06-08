@@ -4,5 +4,3 @@ cd /home/ec2-user/yusephalopod/server/
 npm install
 yum install -y nodejs
 npm install forever -g
-cd ../client
-npm run build
