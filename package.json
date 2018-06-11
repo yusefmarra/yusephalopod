@@ -1,0 +1,26 @@
+{
+  "main": "index.js",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.1"
+  },
+  "scripts": {
+    "client:lint:js": "cd client && yarn lint:js",
+    "client:lint:css": "cd client && yarn lint:css",
+    "client:lint:json": "cd client && yarn lint:json",
+    "client:test": "cd client && yarn test",
+    "server:start": "cd server && yarn start"
+  },
+  "pre-commit": [
+    "client:lint:js",
+    "client:lint:css",
+    "client:lint:json",
+    "client:test"
+  ],
+  "pre-push": [
+    "client:lint:js",
+    "client:lint:css",
+    "client:lint:json",
+    "client:test"
+  ]
+}
