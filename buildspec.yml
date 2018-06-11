@@ -16,6 +16,5 @@ phases:
       - 'zip build.zip -r client/build'
 artifacts:
   files:
-    - 'server/**/*'
-    - '*/build/**/*'
+    - '**/*'
   base-directory: 'server*'
