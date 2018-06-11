@@ -18,4 +18,3 @@ artifacts:
   files:
     - 'server/**/*'
     - 'client/build/**/*'
-  base-directory: 'server'
