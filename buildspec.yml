@@ -8,7 +8,12 @@ phases:
   build:
     commands:
       - 'npm run build'
+  post_build:
+    commands:
+      - 'cd ../server'
+      - 'zip ../build.zip *'
+      - 'cd ..'
+      - 'zip build.zip -r client/build'
 artifacts:
   files:
-    - 'server/*'
-    - 'client/build/**/*'
+    - 'build.zip'
