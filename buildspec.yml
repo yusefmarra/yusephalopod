@@ -8,14 +8,14 @@ phases:
   build:
     commands:
       - 'npm run build'
-  # post_build:
-  #   commands:
-  #     - 'cd ../server'
-  #     - 'zip ../build.zip *'
-  #     - 'cd ..'
-  #     - 'zip build.zip -r client/build'
+  post_build:
+    commands:
+      - 'cd ../server'
+      - 'zip ../build.zip *'
+      - 'cd ..'
+      - 'zip build.zip -r client/build'
 artifacts:
   files:
     - 'server/*'
-    - 'client/build/*'
+    - 'client/build/**/*'
   discard-paths: yes
