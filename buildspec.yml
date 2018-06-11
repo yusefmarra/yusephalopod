@@ -11,5 +11,5 @@ phases:
       - 'cd ../server/'
 artifacts:
   files:
-    - 'server/**/*'
+    - 'server/*'
     - 'client/build/**/*'
