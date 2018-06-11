@@ -11,9 +11,7 @@ phases:
   post_build:
     commands:
       - 'cd ../server'
-      - 'zip ../build.zip *'
-      - 'cd ..'
-      - 'zip build.zip -r client/build'
+      - 'npm install'
 artifacts:
   files:
     - 'server/**/*'
